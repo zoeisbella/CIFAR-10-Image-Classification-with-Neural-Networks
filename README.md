@@ -1,2 +1,6 @@
-# CIFAR-10-Image-Classification-with-Neural-Networks
-A deep learning project for image classification on the CIFAR-10 dataset using convolutional neural networks.
+Metric,Value
+Final Train Accuracy,86.63%
+Final Val Accuracy,87.39%
+Test Accuracy,87.70%
+Training Epochs,50
+Best Val Accuracy,87.70%
