@@ -25,7 +25,8 @@ This project implements a Convolutional Neural Network (CNN) model using TensorF
   - Data augmentation: Rotation (15°), translation (0.1), horizontal flip, zoom (0.1), implemented via `ImageDataGenerator`.  
 
 **Example sample images** (from Notebook output):  
-![CIFAR-10 Samples](cifar10_samples.png)  
+<img width="951" height="633" alt="image" src="https://github.com/user-attachments/assets/08a788b4-01d7-4588-8e6d-6b40d662384a" />
+
 *(Note: Running the notebook generates a 5x5 sample grid.)* 🖼️
 
 ## 🏗️ Model Architecture Summary
@@ -110,14 +111,13 @@ The model progressively increases channels (32→64→128) during training and u
 - **Hardest Class**: Cat (accuracy 70.40%) — possibly due to complex fur textures. 😿  
 - **Easiest Class**: Frog (accuracy 95.90%) — distinct shape features. 🐸  
 - Average class accuracy: ~87.70%.  
+<img width="1148" height="559" alt="image" src="https://github.com/user-attachments/assets/31ad2cad-fb49-4975-835d-79a15d7298de" />
 
-![Training History](training_history.png)  
 *(Accuracy curves: Training/validation converge smoothly.)* 📉
+<img width="713" height="459" alt="image" src="https://github.com/user-attachments/assets/2d25bdcb-ed12-4ebd-9f29-4477d1390da8" />
 
-![Confusion Matrix](confusion_matrix.png)  
 *(Heatmap shows main confusions: Cat with Dog/Bird.)* 🔍
-
-![Class Accuracy](class_accuracy.png)  
+<img width="801" height="644" alt="image" src="https://github.com/user-attachments/assets/de0f8830-e872-4ce9-b197-0fa4951976a1" />
 *(Bar chart: Green > average, red < average.)* 📊
 
 ### 📋 Classification Report (Summary)
