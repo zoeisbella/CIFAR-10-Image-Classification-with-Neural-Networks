@@ -112,13 +112,25 @@ The model progressively increases channels (32→64→128) during training and u
 - **Easiest Class**: Frog (accuracy 95.90%) — distinct shape features. 🐸  
 - Average class accuracy: ~87.70%.  
 <img width="1148" height="559" alt="image" src="https://github.com/user-attachments/assets/31ad2cad-fb49-4975-835d-79a15d7298de" />
+*(Bar chart: Green > average, red < average.)* 📊
 
-*(Accuracy curves: Training/validation converge smoothly.)* 📉
+
+-Accuracy curves: Training/validation converge smoothly.* 📉
 <img width="713" height="459" alt="image" src="https://github.com/user-attachments/assets/2d25bdcb-ed12-4ebd-9f29-4477d1390da8" />
 
-*(Heatmap shows main confusions: Cat with Dog/Bird.)* 🔍
+
+
+-Heatmap shows main confusions: Cat with Dog/Bird.* 🔍
 <img width="801" height="644" alt="image" src="https://github.com/user-attachments/assets/de0f8830-e872-4ce9-b197-0fa4951976a1" />
-*(Bar chart: Green > average, red < average.)* 📊
+Strengths (Top Classes, >90% Accuracy):
+Frog: 95.9% – Minimal errors due to unique shape.
+Automobile: 95.5% – Clear outlines shine.
+Ship/Truck: 94.0%/94.8% – Transport categories excel.
+
+Weaknesses (Bottom Classes, <80% Accuracy):
+Cat: 70.4% – Frequently confused with Dog (83 cases), Frog (68), Bird (51) from texture/pose overlap.
+Dog: 76.5% – 101 misclassified as Cat; 34 as Deer.
+Bird: 84.6% – 50 to Frog; 24 to Cat.
 
 ### 📋 Classification Report (Summary)
 ```
